@@ -1,9 +1,13 @@
-import './index.scss';
+import "./index.scss";
 
-export const Header = () => {
+interface IText {
+  text: string;
+}
+
+export const Header = ({ text }: IText) => {
   return (
-    <section className='Header'>
-      <h3>Splitter</h3>
+    <section className="Header">
+      <h3>{text}</h3>
     </section>
   );
 };

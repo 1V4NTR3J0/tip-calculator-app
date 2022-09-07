@@ -5,7 +5,7 @@ function App() {
   return (
     <main>
       <div className="container">
-        <Header />
+        <Header text="splitter" />
         <Calculator />
       </div>
     </main>
