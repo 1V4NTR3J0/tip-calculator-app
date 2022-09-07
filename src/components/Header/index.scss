@@ -1,0 +1,13 @@
+@import '../../scss/common';
+
+h3 {
+    color: $veryDark;
+    text-transform: uppercase;
+    width: 8rem;
+    letter-spacing: 0.8rem;
+    word-wrap: break-word;
+}
+
+.header{
+    width: 100%;
+}

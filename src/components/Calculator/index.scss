@@ -1,0 +1,10 @@
+@import '../../scss/common';
+
+.calculator {
+    margin-top: 1rem;
+    border-radius: $radius;
+    background-color: $white;
+    box-shadow: -4px 4px 56px -9px rgba($veryDark, 0.37);
+    -webkit-box-shadow: -4px 4px 56px -9px rgba($veryDark, 0.37);
+    -moz-box-shadow: -4px 4px 56px -9px rgba($veryDark, 0.37);
+}
