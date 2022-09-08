@@ -2,9 +2,30 @@
 
 .calculator {
     margin-top: 1rem;
-    border-radius: $radius;
+    padding: 3rem;
+    overflow: hidden;
     background-color: $white;
+    border-radius: $radiusXl;
     box-shadow: -4px 4px 56px -9px rgba($veryDark, 0.37);
     -webkit-box-shadow: -4px 4px 56px -9px rgba($veryDark, 0.37);
     -moz-box-shadow: -4px 4px 56px -9px rgba($veryDark, 0.37);
+
+
+    form {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        column-gap: 3rem;
+
+        @media (min-width: 768px) {
+            grid-template: 1fr / 1fr 1fr;
+        }
+    }
+
+
+    .total {
+        background-color: $veryDark;
+        border-radius: $radiusLg;
+        padding: 1rem;
+    }
+
 }

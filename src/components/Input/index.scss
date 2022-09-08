@@ -1,0 +1,72 @@
+@import '../../scss/common';
+
+.inputContainer {
+    margin: 1.6rem 0;
+
+    .activ {
+        border: solid 2px $cyan;
+        transition: all ease 0, 3s;
+    }
+
+    .noActiv {
+        border: solid 2px transparent;
+        transition: all ease 0, 3s;
+    }
+
+    label {
+        color: $darkGrayish;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    input {
+        appearance: none;
+        border: 0;
+        border-radius: $radiusBase;
+        background-color: $veryLightGrayish;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        color: $veryDark;
+        font-weight: 700;
+        font-size: 1.6rem;
+        font-family: $spaceMono;
+        outline: transparent solid 1px;
+        margin-top: .6rem;
+        padding: .5rem;
+        text-align: end;
+        width: 100%;
+
+        &::placeholder {
+            color: $lightGrayish;
+        }
+
+        &:focus {
+            outline: $cyan solid 2px;
+
+        }
+
+    }
+
+    .billIcon {
+        background-image: url('../../assets/svg/icon-dollar.svg');
+    }
+
+    .personIcon {
+        background-image: url('../../assets/svg/icon-person.svg');
+    }
+
+    div {
+        align-items: center;
+        background-color: $veryLightGrayish;
+        border-radius: $radiusBase;
+        display: flex;
+        padding: .5rem;
+    }
+
+
+}

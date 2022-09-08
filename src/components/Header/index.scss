@@ -8,6 +8,11 @@ h3 {
     word-wrap: break-word;
 }
 
-.header{
-    width: 100%;
+.header {
+
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

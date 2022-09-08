@@ -1,13 +1,10 @@
 import "./index.scss";
+import Logo from "../../assets/svg/logo.svg";
 
-interface IText {
-  text: string;
-}
-
-export const Header = ({ text }: IText) => {
+export const Header = () => {
   return (
-    <section className="Header">
-      <h3>{text}</h3>
+    <section className="header">
+      <img src={Logo} alt="Logo" />
     </section>
   );
 };

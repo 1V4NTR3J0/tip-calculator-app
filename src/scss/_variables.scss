@@ -1,4 +1,3 @@
-
 /// colors
 $cyan: hsl(172, 67%, 45%);
 $veryDark : hsl(183, 100%, 15%);
@@ -9,9 +8,11 @@ $veryLightGrayish : hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
 
 // font
-$spaceMono: 'Space Mono', monospace;
+$spaceMono: 'Space Mono',
+monospace;
 $bold: 700;
 
 // border
-
-$radius: 2rem;
+$radiusBase: .4rem;
+$radiusLg: 1rem;
+$radiusXl: 2rem;
