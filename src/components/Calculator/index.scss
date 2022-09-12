@@ -21,6 +21,10 @@
         }
     }
 
+    .bill {
+        padding: 1rem 0;
+
+    }
 
     .mainTotal {
         background-color: $veryDark;
@@ -28,6 +32,8 @@
         padding: 1rem 2.5rem;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 
 }

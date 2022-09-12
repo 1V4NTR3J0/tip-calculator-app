@@ -1,6 +1,8 @@
 import { SyntheticEvent } from "react";
+import Button from "../Button";
 import Input from "../Input";
 import SelectTip from "../SelectTip";
+import Spacer from "../Spacer";
 import Total from "../Total";
 import "./index.scss";
 
@@ -15,7 +17,7 @@ export const Calculator = () => {
     const bill = target.bill.value;
     const people = target.people.value;
     const tip = target.tip.value;
-    console.log({ bill, people , tip});
+    console.log({ bill, people, tip });
   };
 
   return (
@@ -33,7 +35,9 @@ export const Calculator = () => {
         </div>
         <div className="mainTotal">
           <Total label="Tip Amount" totalNumber="4.27" />
-          <Total label="Total" totalNumber="32.79"/>
+          <Total label="Total" totalNumber="32.79" />
+          <Spacer />
+          <Button text="Reset" type='reset' />
         </div>
         <button type="submit">submit</button>
       </form>

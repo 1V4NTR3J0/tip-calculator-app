@@ -1,0 +1,26 @@
+@import '../../scss/common';
+
+
+.button {
+    background-color: $cyan;
+    border-radius: $radiusBase;
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+    color: $veryDark;
+    font-family: $spaceMono;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $lightGrayish;
+    }
+
+    &:disabled {
+        background-color: $darkGrayish;
+        color: $veryDark;
+    }
+}
