@@ -2,9 +2,9 @@ import { FormEvent, useState } from "react";
 import "./index.scss";
 
 interface IInput {
-  placeholder: string;
+  placeholder?: string;
   icon?: string;
-  label: string;
+  label?: string;
   name: string;
 }
 
@@ -26,7 +26,7 @@ export const Input = ({ placeholder, label, icon, name }: IInput) => {
   return (
     <div className="inputContainer">
       <label>
-        {label}
+        {label !== "" && label}
         <input
           type="number"
           name={name}
@@ -34,7 +34,9 @@ export const Input = ({ placeholder, label, icon, name }: IInput) => {
           placeholder={placeholder}
           onChange={handleChange}
           onBlur={handleBlur}
-          className={icon === "bill" ? "billIcon" : "personIcon"}
+          className={
+            icon === "" ? "" : icon === "bill" ? "billIcon" : "personIcon"
+          }
         />
       </label>
     </div>

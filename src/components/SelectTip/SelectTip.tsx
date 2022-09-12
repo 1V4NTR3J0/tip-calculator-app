@@ -1,3 +1,4 @@
+import Input from "../Input";
 import RadioButton from "../RadioButton";
 import "./index.scss";
 
@@ -11,6 +12,7 @@ export const SelectTip = () => {
         {avialableTips.map((tip) => (
           <RadioButton key={tip} label={tip}/>
         ))}
+        <Input placeholder="Custom" label='' icon='' name='customTip'/>
       </div>
     </div>
   );
