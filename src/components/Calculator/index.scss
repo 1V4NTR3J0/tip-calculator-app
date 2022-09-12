@@ -22,10 +22,12 @@
     }
 
 
-    .total {
+    .mainTotal {
         background-color: $veryDark;
         border-radius: $radiusLg;
-        padding: 1rem;
+        padding: 1rem 2.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
 }

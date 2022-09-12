@@ -1,6 +1,7 @@
 import { SyntheticEvent } from "react";
 import Input from "../Input";
 import SelectTip from "../SelectTip";
+import Total from "../Total";
 import "./index.scss";
 
 export const Calculator = () => {
@@ -30,7 +31,10 @@ export const Calculator = () => {
             name="people"
           />
         </div>
-        <div className="total"> total</div>
+        <div className="mainTotal">
+          <Total label="Tip Amount" totalNumber="4.27" />
+          <Total label="Total" totalNumber="32.79"/>
+        </div>
         <button type="submit">submit</button>
       </form>
     </section>

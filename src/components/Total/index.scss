@@ -1,0 +1,28 @@
+@import '../../scss/common';
+
+.totalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .label {
+        flex-grow: 1;
+
+        h6 {
+            color: $lightGrayish;
+
+            small {
+                color: $darkGrayish;
+            }
+        }
+    }
+
+    .total {
+
+        h3 {
+            color: $cyan;
+            font-size: 3rem;
+        }
+    }
+
+}
